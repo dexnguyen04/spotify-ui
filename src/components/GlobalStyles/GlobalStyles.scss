@@ -17,7 +17,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    line-height: 1.5;
+    line-height: normal;
     text-rendering: optimizespeed;
     display: flex;
     width: 100%;
@@ -29,9 +29,14 @@ body {
 }
 
 #root {
-    height: 100%;
+    isolation: isolate;
+    width: 100%;
+    z-index: 0;
+    transition: none 0.5s cubic-bezier(0.3, 0, 0.4, 1);
 }
 
+#root,
 .App {
     height: 100%;
+    position: relative;
 }

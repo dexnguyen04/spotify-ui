@@ -1,10 +1,12 @@
+import config from "~/config";
+
 import Home from "~/pages/Home";
 import Search from "~/pages/Search";
 
 // Public routes
 const publicRoutes = [
-    { path: "/", component: Home },
-    { path: "/search", component: Search },
+    { path: config.routes.home, component: Home },
+    { path: config.routes.search, component: Search },
 ];
 
 // Private routes
